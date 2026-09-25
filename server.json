@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/xome",
   "title": "Xome",
   "description": "Xome MCP — US residential foreclosure/REO/short-sale auction calendar and",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/xome",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-xome",
