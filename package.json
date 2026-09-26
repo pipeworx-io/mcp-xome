@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-xome",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Xome MCP — US residential foreclosure/REO/short-sale auction calendar and",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-b521a170165fd8f0a870cbe07fca14076fc2d3a39cb19d36cad8fd72d580527f",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-519966efc3fc17513cc978d6a88122d2d402e524a9b291eb8c4975aa6c7d6cfd",
+    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
   }
 }
