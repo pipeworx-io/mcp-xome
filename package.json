@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-xome",
-  "version": "0.1.2",
-  "description": "Xome MCP — US residential foreclosure/REO/short-sale auction calendar and",
+  "version": "0.2.0",
+  "description": "Xome MCP — US residential foreclosure/REO/short-sale auction calendar and property facts, sourced from xome.com. Fleet #1925.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-xome": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "xome"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-xome.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/xome",
   "pipeworx": {
-    "sourceHash": "v1-519966efc3fc17513cc978d6a88122d2d402e524a9b291eb8c4975aa6c7d6cfd",
-    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
+    "mode": "gateway",
+    "slug": "xome",
+    "gatewaySlug": "xome",
+    "sourceHash": "v1-00d5b011409632690368a676fe18f637cd73f154a423c3cc14d0e7be69262354",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
